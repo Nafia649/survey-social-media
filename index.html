@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey On Preferred Social Media Platforms</h1>
+  <p id="description">
+    This survey is being conducted for information purposes.
+    Thank you for taking your time to fill this survey.
+  </p>
+
+  <form id="survey-form">
+    <label id="name-label">Name
+      <br>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </label>
+    <br><br>
+
+    <label id="email-label">Email
+      <br>
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </label>
+    <br><br>
+
+    <label id="number-label" class="number">Phone Number
+      <br>
+      <input type="tel" id="number" placeholder="Enter your phone number" required pattern="[0-9]{10,15}">
+    </label>
+    <br><br>
+
+    <label>How often do you use social media platforms
+      <br>
+      <select id="dropdown" required>
+        <option value="">(Select one)</option>
+        <option>One or two times a day</option>
+        <option>One or two times a week</option>
+        <option>Frequently in a month</option>
+        <option>Everyday</option>
+      </select>
+    </label>
+    <br><br>
+
+    <label>Do you prefer Texting or Calling?</label>
+    <br>
+    <label>
+      <input type="radio" id="text" name="prefer" value="text" required> Texting
+    </label>
+    <label>
+      <input type="radio" id="call" name="prefer" value="call"> Calling
+    </label>
+    <br><br>
+
+    <label>Select your preferred social media platform</label>
+    <br>
+    <label>
+      <input type="checkbox" id="Insta" value="Instagram"> Instagram
+    </label>
+    <label>
+      <input type="checkbox" id="whatsapp" value="WhatsApp"> Whatsapp
+    </label>
+    <label>
+      <input type="checkbox" id="X" value="X"> X
+    </label>
+    <label>
+      <input type="checkbox" id="Snapchat" value="Snapchat"> Snapchat
+    </label>
+    <label>
+      <input type="checkbox" id="Weverse" value="Weverse"> Weverse
+    </label>
+    <label>
+      <input type="checkbox" id="other" value="Other"> Other
+      <br>
+      <textarea placeholder="Please specify..."></textarea>
+    </label>
+    <br><br>
+
+    <input type="submit" id="submit" value="Submit">
+  </form>
+</body>
+</html>
